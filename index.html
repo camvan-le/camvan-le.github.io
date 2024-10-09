@@ -9,30 +9,34 @@
 
 <body>
 
-
     <nav class="social_container">
-        <a href="https://www.linkedin.com/in/cam-van-le-1b3a36288/">Linkedin</a>
-        <a href="https://github.com/camvan-le/camvan-le.github.io">Github</a>
-        <a href="mailto:camvan.le@torontomu.ca, camvan.le@torontomu.ca">Contact</a>
+        <a class="social_link" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="#intro_section">Home</a>
+        <a class="social_link" id="linkedin" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="https://www.linkedin.com/in/cam-van-le-1b3a36288/">Linkedin</a>
+        <a class="social_link" id="github" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="https://github.com/camvan-le/camvan-le.github.io">Github</a>
+        <a class="social_link" id="gmail" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="mailto:camvan.le@torontomu.ca, camvan.le@torontomu.ca">Contact</a>
     </nav>
-
+    
     <div class="introduction-container">
         <div>
             <p id="displayUserName"> Hello, </p>
         </div>
         <div>
-        <input type="text" placeholder="What's your name?" id="inputName">
-        <button class="enterButton" id="button" onclick="nameChange()">Enter</button>   
-        </div>
+            <input type="text" placeholder="What's your name?" id="inputName">
+            <button class="enterButton" id="button" onclick="nameChange()">Enter</button>
+            </div>
 
     </div>
 
     <!-- Introduction section -->
 
-    <div class="intro_section">
+    <div class="intro_section" id="intro_section">
         <div class="intro_left">
             <div class="name">I'm Cam Van Le!</div> 
-            <div class="intro_brief">A third-year student seeking opportunities to gain more knowledge and valuable experience in the Business and Technology fields.</div>
+            <div class="intro_brief">A third-year student seeking opportunities to gain more knowledge 
+                and valuable experience in the Business and Technology fields. With an unwavering work ethic, 
+                persistence, and a proactive mindset, I am eager to learn and develop my expertise and have 
+                the confidence to make meaningful contributions to your team.
+            </div>
         </div>
 
         <div class="intro_right">
