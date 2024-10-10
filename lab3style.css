@@ -25,21 +25,31 @@ body {
 
 h1 { 
     font-family: Tahoma, sans-serif;
-    font-size: 20pt;
-    color: #607d8b;
+    font-size: 35pt;
+    color: #617f8e;
 } 
 
 h3 {
     font-family: Helvetica, sans-serif;
     font-size: 15pt;
     color: #959595;
-    margin-top: 18px;
+    margin-top: 30px;
 }
 
+h4 {
+    color: #7b8a91;
+    font-size: 20px;
+    font-weight:normal;
+    margin-top: 10%;
+}
+
+ul {
+    color: #8e8888;
+}
 p {
-    font-size: 12pt;
-    color: #cbcbcb;
-    margin: 20px;
+    font-size: 15px;
+    color: #9ba9b5;
+    margin: 10px;
 }
 
 .bold-heading {
@@ -64,38 +74,26 @@ a:active {
 /* navigation  */
 
 .social_container {
-    padding: 0px;
-    margin: 0px;
+    right: 50px;
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    gap: 30px;
-    margin-top: 0px;
-    margin-right: 0px;
+    gap: 20px;
 }
 
 .social_link {
-    margin: 40px;
+    margin: 20px;
 }
 
 .intro_section {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    margin: 20px;
     justify-content: space-between;
     min-height: 100vh;
     align-items: center;
-}
-
-.name {
-    align-items: center;
-    font-size: 45pt;
-    font-weight: bold;
-    scroll-margin-top: 50px;
-    margin-bottom: 0px;
-    color: #cbd2d9;
 }
 
 .intro_brief {
@@ -121,31 +119,20 @@ a:active {
     
 .education {
     padding: 6px;
-    border: 1px solid #ccc; 
-    border-radius: 10px; 
-    box-shadow: 0 3px 5px; 
-    margin-top: 18%;
+    font-size: 30pt;
+    margin-bottom: 10px;
 }
 
 .program {
     padding: 6px;
-    border: 1px solid #ccc; 
-    border-radius: 10px; 
-    box-shadow: 0 3px 5px;
 }
 
 .award {
     padding: 6px;
-    border: 1px solid #ccc;
-    border-radius: 10px; 
-    box-shadow: 0 3px 5px;
 }
 
 .activity {
     padding: 6px;
-    border: 1px solid #ccc; 
-    border-radius: 10px; 
-    box-shadow: 0 2px 5px;
 }
 
 .coursework {
@@ -178,34 +165,63 @@ h4 {
 }
 
 .introduction-container p {
-    font-size: 90px;
-    color: white;
+    font-size: 80px;
+    color: #ccc;
     font-weight: bold;
     padding: 1px;
-    margin: 0 10%;
+    margin-bottom: 0;
+    margin-top: 10%;
+    margin-left: 0%
 }
 
 .introduction-container input {
     border: none;
     border-bottom: 1px solid white;
     background-color: transparent;
+    color: white;
     margin-top: 20px;
     font-size: 20px;
-    outline: none; /* Removes the default focus outline */
+    outline: none; 
     caret-color: white;
     margin-bottom: 450px;
-    margin-left: 10%;
+    margin-left: 0%;
 } 
 
 /* BUTTON */
-
 .enterButton {
-    padding: 10px;
     font-weight: 500;
     border-radius: 5px ;
-    background-color: pink;
+    background-color: #ccc;
+    font-size:10px;
+    height: 30px;
+    margin-top: 20px;
 }
 
-#enterButton {
-    font-size: 20px;
+/* dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    gap: 20px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #adb2b4;
+    min-width: 100px;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 13px 13px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #918d8d;
+}
+
+.dropdown:hover .dropdown-content {
+    display:grid;
 }

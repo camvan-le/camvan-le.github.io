@@ -1,21 +1,51 @@
-function nameChange(){
+// input name //
+function nameChange() {
     const displayUserName = document.getElementById("displayUserName");
-    const inputName = document.getElementById("inputName").value;
-    displayUserName.innerText = `Hello, ${inputName}!`;
+    const inputName = document.getElementById("inputName").value.trim();
+    const greeting = document.getElementById("greeting");
+
+    displayUserName.style.color = "#ccc";
+    displayUserName.style.fontSize = "50px";
+
+    if (inputName) {
+        displayUserName.innerText = `Hello, ${inputName}!
+        Welcome to my homepage!`;
+        greeting.style.display = "none";
+
+    }
+
+    else {
+        displayUserName.innerText = "Please enter your name!";
+        displayUserName.style.color = "#e4c5c2";
+    }
 }
 
-// Function to apply the hover effect
+// navigation // 
 function hoverEffect(element) {
-    element.style.color = '#e4c5c2'; // Change text color to gold
-    console.log("abc")
+    element.style.color = '#e4c5c2'; 
 }
 
-// Function to reset the effect when mouse leaves
 function resetEffect(element) {
-    element.style.backgroundColor = ''; // Reset background color
-    element.style.color = ''; // Reset text color
+    element.style.backgroundColor = '';
+    element.style.color = ''; 
 }
 
+// dropdown menu //
+    const dropdownButton = document.getElementById("dropdownButton");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    
+        dropdownButton.addEventListener("click", function(event) {
+            dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+            event.stopPropagation(); 
+        });
+
+            document.addEventListener("click", function() {
+            dropdownMenu.style.display = "none";
+        });
+
+
+
+// image // 
 function toggleZoom() {
     const img = document.getElementById("img");
 
@@ -27,15 +57,16 @@ function toggleZoom() {
         img.style.height = "400px";
     }}
 
+// enter button // 
 document.addEventListener('DOMContentLoaded', function() {
     const button = document.getElementById('button')
-
+    
     button.addEventListener('mouseover', function() {
-        button.style.backgroundColor = '#13315c'
+        button.style.backgroundColor = '#e4c5c2'
     }, true);
-
+    
     button.addEventListener('mouseout', function() {
         button.style.backgroundColor = ''
     }, true);
 }); 
-
+    

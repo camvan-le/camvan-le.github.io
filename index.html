@@ -9,31 +9,41 @@
 
 <body>
 
+    <!-- Navigation -->
     <nav class="social_container">
-        <a class="social_link" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="#intro_section">Home</a>
-        <a class="social_link" id="linkedin" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="https://www.linkedin.com/in/cam-van-le-1b3a36288/">Linkedin</a>
-        <a class="social_link" id="github" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="https://github.com/camvan-le/camvan-le.github.io">Github</a>
-        <a class="social_link" id="gmail" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="mailto:camvan.le@torontomu.ca, camvan.le@torontomu.ca">Contact</a>
+        <a class="social_link" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="#introduction-container">Home</a>
+        <a class="social_link" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="#intro_section">About me</a>
+        
+        <div class="dropdown">
+            <a class="social_link"  onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="javascript:void(0)" onclick="toggleDropdown()">Contact</a>
+            <div id="dropdownMenu" class="dropdown-content">
+                <a href="https://www.linkedin.com/in/cam-van-le-1b3a36288/">LinkedIn</a>
+                <a href="https://www.instagram.com/lcvannn/">Instagram</a>
+                <a href="mailto:camvan.le@torontomu.ca">Gmail</a>
+            </div>
+        </div>
     </nav>
-    
-    <div class="introduction-container">
+
+    <div class="introduction-container" id="introduction-container">
         <div>
-            <p id="displayUserName"> Hello, </p>
+            <p class="hello" id="displayUserName" style="color: #6a8497"; margin-left=0;> Hello, I'm Cam Van Le</p>
+            <p class="greeting" id="greeting" style="font-size: 20px; margin-top: 0px; color: #6d7780">A highly motivated and enthusiastic third-year student 
+                <br>seeking opportunities to gain more knowledge and valuable experience in <br> the Business and Technology field.</p>
         </div>
         <div>
-            <input type="text" placeholder="What's your name?" id="inputName">
-            <button class="enterButton" id="button" onclick="nameChange()">Enter</button>
+            <div>
+                <input type="text" placeholder="What's your name?" id="inputName">
+                <button class="enterButton" id="button" onclick="nameChange()" style="padding: 1px 1px;" >Enter</button>
             </div>
-
+        </div>
     </div>
 
+    
     <!-- Introduction section -->
 
     <div class="intro_section" id="intro_section">
         <div class="intro_left">
-            <div class="name">I'm Cam Van Le!</div> 
-            <div class="intro_brief">A third-year student seeking opportunities to gain more knowledge 
-                and valuable experience in the Business and Technology fields. With an unwavering work ethic, 
+            <div class="intro_brief"> With an unwavering work ethic, 
                 persistence, and a proactive mindset, I am eager to learn and develop my expertise and have 
                 the confidence to make meaningful contributions to your team.
             </div>
@@ -43,25 +53,21 @@
             <img src="IMG_5145 4.jpg" alt="" onclick="toggleZoom()" id="img">   
         </div>
     </div>
+
     <!-- Education section -->
-
     <br>
-    <div class="education">
-    <h1>Education</h1>
+    <div class="education" id="education_section">
+        <h1>Education</h1>
+        <h4>Cau Giay Highschool: Hanoi, Vietnam <br> Date of Attendance: 09/2019</h4>
+        <h4>Toronto Metropolitan University: Toronto, Canada <br> Date of Attendance: 09/2022</h4>
     </div>
-    <br>
-    <p>Cau Giay Highschool: Hanoi, Vietnam <br> Date of Attendance: 09/2019</p>
-    <p>Toronto Metropolitan University: Toronto, Canada <br> Date of Attendance: 09/2022</p>
-
 
     <br>
     <div class="program">
-    <h1>Program</h1>
-    </div>
-    <h3> Business Technology Management </h3>
-    <br>
-    <ul>
-        The BTM program integrated the principles of business management with advanced information and communication technologies. 
+        <h1>Program</h1>
+        <h3> Business Technology Management </h3>
+        <br>
+        <ul> The BTM program integrated the principles of business management with advanced information and communication technologies. 
         Through the course, I am able to develop my skills by concentrating aligning IT strategies with specific business objectives. 
         By developing this expertise, I am better equipped to gain a competitive edge in today's rapidly evolving business landscape.</ul>
         <br>
@@ -69,24 +75,25 @@
     <h3> Relevant Coursework </h3>
 
     <div class="coursework">
-        
         <div class="itm781">
             <h4> ITM 780 - Web Design and Management</h4>
-            <p> ITM780 provides fundamental knowledge and skills needed to design, develop and manage effective websites for businesses.
-            Additionally, it covers a wide range of critical aspects in web designing, including user user-centered analysis, layout, web publishing, etc. </p>
+            <ul> ITM780 provides fundamental knowledge and skills needed to design, develop and manage effective websites for businesses.
+            Additionally, it covers a wide range of critical aspects in web designing, including user user-centered analysis, layout, web publishing, etc. </ul>
         </div>
         
         <div class="itm781">
             <h4> ITM 500 - Data and Information Management</h4>
-            <p> The course provides me with comprehensive skills in developing SQL views and queries to extract relevant data in order to meet
-                the business's information requirements in decision-making processes, allowing for effective analysis and informed decision-making.</div>
+            <ul> The course provides me with comprehensive skills in developing SQL views and queries to extract relevant data in order to meet
+                the business's information requirements in decision-making processes, allowing for effective analysis and informed decision-making. </ul>
+        </div>
 
         <div class="itm782">
             <h4> ITM 395 - Systems Analysis and Design</h4>
-            <p> I haved gained knowledge in Unified Modeling Language (UML) to 
+            <ul> I haved gained knowledge in Unified Modeling Language (UML) to 
                 visually represent system structures, behaviors, and interactions. Moreover, I developed 
-                the ability to effectively gather and analyze business, functional, and technical requirements from stakeholders.</p>
+                the ability to effectively gather and analyze business, functional, and technical requirements from stakeholders.</ul>
             </div>
+    </div>
     </div>
     
     <br>
