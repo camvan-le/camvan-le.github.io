@@ -8,10 +8,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: rgb(16,16,114);
-    background: linear-gradient(90deg, rgba(16,16,114,1) 0%, rgba(0,0,0,1) 0%, rgba(21,62,102,1) 98%);
-    margin: 0 10%;
+    background: rgb(127,105,115);
+    background: radial-gradient(circle, rgba(127,105,115,1) 0%, rgba(10,33,49,1) 100%);
     color: #3e4c59;
+}
+
+.body {
+    margin: 0 10%;
 }
 
 .nameDisplay {
@@ -24,36 +27,36 @@ body {
 }
 
 h1 { 
-    font-family: Tahoma, sans-serif;
     font-size: 35pt;
-    color: #617f8e;
+    color: #0a2131;
 } 
 
 h3 {
-    font-family: Helvetica, sans-serif;
     font-size: 15pt;
-    color: #959595;
+    color: #25292c;
     margin-top: 30px;
 }
 
-h4 {
-    color: #7b8a91;
-    font-size: 20px;
-    font-weight:normal;
-    margin-top: 10%;
+h4{
+    font-size: 15pt;
+    color: #1f334d;
 }
 
 ul {
-    color: #8e8888;
+    color: #cac3c3;
+    margin: 10px;
 }
+
 p {
     font-size: 15px;
-    color: #9ba9b5;
+    color: #c6d2dd;
     margin: 10px;
 }
 
 .bold-heading {
     font-weight: bold; 
+    color: rgb(179, 176, 190);
+
 }
 
 a {
@@ -63,7 +66,7 @@ a {
     
 a:hover {
     text-decoration: none; 
-    color: #361b14;
+    color: #474960;
 }
 
 a:active {
@@ -72,7 +75,6 @@ a:active {
     }
 
 /* navigation  */
-
 .social_container {
     right: 50px;
     position: fixed;
@@ -98,7 +100,7 @@ a:active {
 
 .intro_brief {
     margin-top: 10px;
-    color: #616e7c;
+    color: #a0abb8;
     font-size: 20px;
 }
 
@@ -113,7 +115,6 @@ a:active {
 .intro_left {
     width: 70%;
     padding: 20px;
-    margin: 10px;
     border: 0;
 }
     
@@ -155,14 +156,14 @@ h4 {
 
 /* user input section  */
 .introduction-container {
-    display: flex;
-    padding: 0px;
-    flex-direction: column;
-    width: 100%;
-    height: 75vh;
-    justify-content: flex-start;
-    padding-top: 100px;
-}
+        display: flex;
+        padding: 0px;
+        flex-direction: column;
+        width: 100%;
+        height: 75vh;
+        justify-content: flex-start;
+        padding-top: 100px;
+    }
 
 .introduction-container p {
     font-size: 80px;
@@ -171,7 +172,7 @@ h4 {
     padding: 1px;
     margin-bottom: 0;
     margin-top: 10%;
-    margin-left: 0%
+    margin-left: 0%;
 }
 
 .introduction-container input {
@@ -219,11 +220,9 @@ h4 {
 }
 
 .dropdown-content a:hover {
-    background-color: #918d8d;
+    background-color: #f9eded;
 }
 
 .dropdown:hover .dropdown-content {
     display:grid;
 }
-
-

@@ -1,0 +1,247 @@
+/* footer */ 
+.footer {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0;
+    margin-bottom: 0;
+    background-color: #07111a;
+}
+
+.footerNav {
+    display: flex;
+    margin-left: 10%;
+    gap: 15px; /* Space between contact info and icons */
+    width: 100%; /* Ensures full width */
+    max-width: 1200px; /* Optional: max-width for a more contained layout */
+    size: 15pt;
+}
+
+.homepage {
+    margin: 20px 5%;
+}
+
+.homepage a{
+    margin: 0px;
+}
+
+.homepage ul{
+    margin: 10px;
+}
+
+.contact {
+    text-align: left;
+    margin: 20px;
+}
+
+.icons {
+    display: flex;         
+    gap: 15px;            
+    justify-content: center; 
+    margin: 50pt;
+    padding: 10pt;
+}
+
+.icons a {
+    margin-right: 20px; 
+    text-align: right;
+    display: flex;
+    justify-self: center;
+}
+
+.footer .icons a i {
+    font-size: 15px; 
+    color: #9ba9b5; 
+}
+
+.resume{
+    margin-top: 50pt;
+}
+
+/* footerBottom */
+.footerBottom {
+    display: flex;         
+    gap: 15px;            
+    justify-content: center; 
+    background: #07111a;
+    margin: 0;
+}
+
+/* questions */
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.message h1{
+    font-size: 40pt;
+    color: #cec8c8;
+}
+
+.message h3{
+    font-size: 15pt;
+    color: #898787;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+/* form button */
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.form-button {
+    background-color: transparent; 
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: transform 0.5s ease;
+    animation: moveButton 3s infinite;
+}
+
+@keyframes moveButton {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }}
+
+.form-button:hover {
+    transform: translateY(6px); 
+}
+
+.form-button::before {
+    content: "";
+    width: 15px; 
+    height: 15px; 
+    border-bottom: 5px solid #07111a; 
+    border-right: 5px solid #07111a; 
+    transform: rotate(45deg); 
+    display: inline-block;
+}
+
+.formContainer {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+}
+
+/* arrow button */ 
+.button {
+    display: flex;                    
+    justify-content: space-between;   
+    align-items: center;             
+}
+
+.arrow-button {
+    background: none;
+    border: none;
+    color: inherit;    
+    font-size: 24px;   
+    cursor: pointer;
+    padding: 10px 15px;             
+    width: 100%;  
+}
+
+.arrow-button:hover {
+    color: #555;     
+}
+  
+/* modal */
+.modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #f9eded;
+    padding: 30px;
+    padding-bottom: 5px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 5px;
+}
+
+/* question */
+.question {
+    display: none;
+    font-size: 15pt;
+}
+
+.question.active {
+    display: block;
+}
+
+/* close button */
+.close-button {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* message */
+.thank-you-message, .reset-form {
+    display: none; 
+    text-align: center;
+}
+
+.thank-you-message p{
+    color: rgb(33, 55, 77);
+    font-size: 15pt;
+}
+
+#thank-you, #reset-form {
+    display: none; 
+}
+
+#arrow-button {
+    display: block;
+}
+
+/* submit & reset button */
+.finalButton {
+    display: flex;                      
+    justify-content: center;             
+    align-items: center;               
+    margin-top: 20px;                  
+}
+
+#submit {
+    background-color: #08325f;     
+}
+
+#reset {
+    background-color: #3b3e5a;       
+}
+
+.finalButton button {
+    padding: 10px 20px;
+    font-size: 16px;                   
+    background-color: #08325f;      
+    color: white;                      
+    border: none;                      
+    border-radius: 5px;               
+    cursor: pointer;                   
+    margin: 0 10px;                     
+    transition: background-color 0.3s;  
+}
