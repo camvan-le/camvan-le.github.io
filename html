@@ -1,137 +1,336 @@
-<form>
-                    <label>Full Name:</label><br>
-                    <input type="text" id="name" name="name" required><br><br>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cam Van Le ITM780 Lab 2 </title>
+    <link rel="stylesheet" href="lab3style.css">
+    <link rel="stylesheet" href="lab6.css">
+    <script src="lab.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 
-                    <label>Gender:</label>
-                    <input type="radio" id="male" name="gender" value="Male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="Female">
-                    <label for="female">Female</label><br><br>
+<body>
+    <div class="body">
+    <!-- Navigation -->
+        <nav class="social_container">
+            <a class="social_link" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="#introduction-container">Home</a>
+            <a class="social_link" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="#intro_section">About me</a>
+            <a class="social_link" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="#form">Services</a>
+            
+            <div class="dropdown">
+                <a class="social_link"  onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)" href="javascript:void(0)" onclick="toggleDropdown()">Contact</a>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a href="https://www.linkedin.com/in/cam-van-le-1b3a36288/">LinkedIn</a>
+                    <a href="https://www.instagram.com/lcvannn/">Instagram</a>
+                    <a href="mailto:camvan.le@torontomu.ca">Gmail</a>
+                </div>
+            </div>
+        </nav>
 
-                    <label for="email">Email Address:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
-                    
-                    <label for="message">Phone Number:</label><br>
-                    <textarea id="number" name="message" required></textarea><br><br>
+        <div class="introduction-container" id="introduction-container">
+            <div>
+                <p class="hello" id="displayUserName" style="color: #6a8497"; margin-left=0;> Hello, I'm Cam Van Le</p>
+                <p class="greeting" id="greeting" style="font-size: 20px; margin-top: 0px; color: #6d7780">A highly motivated and enthusiastic third-year student 
+                    <br>seeking opportunities to gain more knowledge and valuable experience in <br> the Business and Technology field.</p>
+            </div>
+            <div>
+                <div>
+                    <input type="text" placeholder="What's your name?" id="inputName">
+                    <button class="enterButton" id="button" onclick="nameChange()" style="padding: 1px 1px;">Enter</button>
+                </div>
+            </div>
+        </div>
 
-                    <label for="message">Do you already have data collected for this project?</label><br>
-                    <input type="radio" id="ask" name="yes" value="Yes">
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="ask" name="no" value="No">
-                    <label for="no">No</label><br><br>
-                    
-        <!-- Checkbox options for service -->
-                    <label>Type of services:</label>
-                    <select id="service" name="service">
-                        <option value="1">Data Cleaning</option>
-                        <option value="2">Visualization</option>
-                        <option value="3">Predictive Modeling</option>
-                        <option value="4"> Reporting/Dashboards</option>
-                        <option value="other">Other</option>
-                    </select><br><br>
+    <!-- Introduction section -->
+        <div class="intro_section" id="intro_section">
+            <div class="intro_left">
+                <div class="intro_brief"> With an unwavering work ethic, 
+                    persistence, and a proactive mindset, I am eager to learn and develop my expertise and have 
+                    the confidence to make meaningful contributions to your team.
+                </div>
+            </div>
+
+            <div class="intro_right">
+                <img src="IMG_5145 4.jpg" alt="" onclick="toggleZoom()" id="img">   
+            </div>
+        </div>
+
+    <!-- Education section -->
+    <br>
+        <div class="education" id="education_section">
+            <h1>Education</h1>
+            <h3>Cau Giay Highschool: Hanoi, Vietnam <br> Date of Attendance: 09/2019</h3>
+            <h3>Toronto Metropolitan University: Toronto, Canada <br> Date of Attendance: 09/2022</h3>
+        </div>
+
+    <br>
+        <div class="program">
+            <h1>Program</h1>
+            <h3> Business Technology Management </h3>
+            <br>
+            <ul> The BTM program integrated the principles of business management with advanced information and communication technologies. 
+            Through the course, I am able to develop my skills by concentrating aligning IT strategies with specific business objectives. 
+            By developing this expertise, I am better equipped to gain a competitive edge in today's rapidly evolving business landscape.</ul>
+            <br>
+
+        <h3> Relevant Coursework </h3>
+
+        <div class="coursework" >
+            <div class="itm781" >
+                <h4> ITM 780 - Web Design and Management</h4>
+                <ul> ITM780 provides fundamental knowledge and skills needed to design, develop and manage effective websites for businesses.
+                Additionally, it covers a wide range of critical aspects in web designing, including user user-centered analysis, layout, web publishing, etc. </ul>
+            </div>
+            
+            <div class="itm781">
+                <h4> ITM 500 - Data and Information Management</h4>
+                <ul> The course provides me with comprehensive skills in developing SQL views and queries to extract relevant data in order to meet
+                    the business's information requirements in decision-making processes, allowing for effective analysis and informed decision-making. </ul>
+            </div>
+
+            <div class="itm782">
+                <h4> ITM 395 - Systems Analysis and Design</h4>
+                <ul> I haved gained knowledge in Unified Modeling Language (UML) to 
+                    visually represent system structures, behaviors, and interactions. Moreover, I developed 
+                    the ability to effectively gather and analyze business, functional, and technical requirements from stakeholders.</ul>
+                </div>
+        </div>
+        </div>
     
-        <!-- Dropdown menu for method -->
-                    <label for="method">Preferred Communication Method:</label>
-                    <select id="method" name="method">
-                        <option value="email">Email</option>
-                        <option value="phone">Phone</option>
-                        <option value="video call">Video call</option>
-                        <option value="other">Other</option>
-                    </select><br><br>
+    <!-- Awards section -->
+    <br>
+        <div class="award">
+            <h1> Educational Awards </h1>
+            
+            <br>
+            <ul class="bold-heading"> Highschool Outstanding Student Awards </ul>
+                <p> Recognized for exceptional academic performance and achievements across all subjects, including Mathematics, Literature, and Computer Studies. </p>
+            <ul class="bold-heading"> Silver Medal, Creative Writing Competition </ul>
+                <p> Demonstrated exceptional creativity, originality, and technical skill in writing. <br> Proudly recognized at a school event for exemplary contributions to student writing.</p>
+            </ul>
+        </div>
 
-                    <button type="submit">Submit</button>
+    <!-- Activities section -->
+    <div class="activity">
+        <h1>Extra-curricular activities</h1>
+        
+        <br>
+        <ul class ="bold-heading"> Community Services Project </ul>
+            <p><a href="https://www.facebook.com/bondtotheheart.2021?locale=vi_VN">Bond To The Heart homepage</a></p> 
+        
+        <ul class ="bold-heading">Organizing Fundraising Events </ul>
+            <p><a href="https://www.facebook.com/banhmiproject?locale=vi_VN">Banh Mi (Charity Project) homepage</a></p> 
 
-
-
-
-
-/* Button styling */
-.form-button {
-    background-color: #0073e6;
-    color: #fff;
-    padding: 15px 30px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* Button hover effect */
-.form-button:hover {
-    background-color: #005bb5;
-}
-
-/* Modal styling */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    justify-content: center;
-    align-items: center;
-}
-
-/* Modal content styling */
-.modal-content {
-    background-color: #fff;
-    padding: 20px;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 8px;
-}
-
-/* Close button */
-.close-button {
-    float: right;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-
-
-
-function openModal() {
-    document.getElementById("modal").style.display = "flex";
-}
-
-function closeModal() {
-    document.getElementById("modal").style.display = "none";
-}
-
-
-
-let currentQuestion = 0;
-
-function showNextQuestion() {
-    const currentQuestion = document.querySelector('.question.active');
-    currentQuestion.classList.remove('active');
-}
-
-<div class="button">
-    <div class="previousQuestion"> 
-        <button type="button" onclick="showPreviousQuestion()" class="arrow-button">&#8592;</button>
+        <ul class ="bold-heading">Math Tutoring</ul>
+        
     </div>
-    <div class="nextQuestion"> 
-        <button type="button" onclick="showNextQuestion()" class="arrow-button">&#8594;</button>   
+
+    <!-- Form section -->
+    <div class="formContainer" id="form">
+        <div class="message" id="message">
+            <h1>Let's Collaborate on Your Projects! </h1>
+            <h3>To get started, please fill out the form below with a few details about your project and any specific goals. <br>
+                I'll get back to you within 24-48 hours to discuss how we can turn your data into actionable insights.</h3>
+        </div>
+    
+    <!-- Form button -->
+        <div class="buttonContainer">
+            <button class="form-button" onclick="openModal()"></button>
+        </div>
+
+    <!-- question -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+
+                <form id="questions">
+                    <!-- User info -->
+                    <div class="question active">
+                        <strong><label for="name">What is your full name?</label><br></strong>
+                        <input type="text" id="name" ><br><br>
+                    
+                        <strong><label for="gender">Gender:</label><br></strong>
+                        <input type="radio" id="male" name="dataCollection" value="male">
+                        <label for="yes">Male</label>
+                        <input type="radio" id="female" name="dataCollection" value="female">
+                        <label for="no">Female</label><br><br>
+
+                        <strong><label for="email">Email Address:</label><br></strong>
+                        <input type="email" id="email" ><br><br>
+                    
+                        <strong><label for="number">Phone Number:</label><br></strong>
+                        <input type="tel" id="number" ><br><br>
+
+                        <div class="button">
+                            <div class="nextQuestion"> 
+                                <button type="button" onclick="showNextQuestion()" class="arrow-button">&#8594;</button>   
+                            </div>
+                        </div>
+
+                    </div>
+        
+                    <!-- Data Collection -->
+                    <div class="question">
+                        <strong><label for="dataCollection">Do you already have data collected for this project?</label><br></strong>
+                        <input type="radio" id="yes" name="dataCollection" value="Yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="dataCollection" value="No">
+                        <label for="no">No</label><br><br>
+
+                        <strong><label for="dataCollection">Type of services:</label></strong>
+                        <select id="service" name="service">
+                            <option value="1">Data Cleaning</option>
+                            <option value="2">Visualization</option>
+                            <option value="3">Predictive Modeling</option>
+                            <option value="4"> Reporting/Dashboards</option>
+                            <option value="5">Other</option>
+                        </select><br><br>
+
+                        <div class="button">
+                            <div class="previousQuestion"> 
+                                <button type="button" onclick="showPreviousQuestion()" class="arrow-button">&#8592;</button>
+                            </div>
+                            <div class="nextQuestion"> 
+                                <button type="button" onclick="showNextQuestion()" class="arrow-button">&#8594;</button>   
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="question">
+                        <strong><label for="dataCollection">Are there particular metrics or KPIs you’d like me to focus on?</label></strong>
+                            <ol>
+                                <input type="radio" id="1" name="dataCollection" value="1">
+                                <label for="1">Cost Per Acquisition (CPA)</label><br>
+
+                                <input type="radio" id="2" name="dataCollection" value="2">
+                                <label for="2">Customer Retention Rate</label><br>
+
+                                <input type="radio" id="3" name="dataCollection" value="3">
+                                <label for="3">Customer Acquisition Rate</label><br>
+
+                                <input type="radio" id="4" name="dataCollection" value="4">
+                                <label for="4">Return on Investment (ROI)</label><br>
+
+                                <input type="radio" id="5" name="dataCollection" value="5">
+                                <label for="5">Revenue Growth</label><br>
+
+                                <input type="radio" id="6" name="dataCollection" value="6">
+                                <label for="6">Other</label><br><br>
+                            </ol>
+
+                            <div class="button">
+                                <div class="previousQuestion"> 
+                                    <button type="button" onclick="showPreviousQuestion()" class="arrow-button">&#8592;</button>
+                                </div>
+                                <div class="nextQuestion"> 
+                                    <button type="button" onclick="showNextQuestion()" class="arrow-button">&#8594;</button>   
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="question">
+                        <strong><label for="dataCollection">Are there any preferred tools or platforms you’d like me to use?</label></strong>
+                            <ol>
+                                <input type="radio" id="option1" name="dataCollection" value="1">
+                                <label for="1">Python</label><br>
+
+                                <input type="radio" id="option2" name="dataCollection" value="2">
+                                <label for="2">SQL</label><br>
+
+                                <input type="radio" id="option3" name="dataCollection" value="3">
+                                <label for="3">Power BI</label><br>
+
+                                <input type="radio" id="option4" name="dataCollection" value="4">
+                                <label for="4">Tableau</label><br>
+
+                                <input type="radio" id="option5" name="dataCollection" value="5">
+                                <label for="5">Excel</label><br>
+
+                                <input type="radio" id="option6" name="dataCollection" value="6">
+                                <label for="6">Other</label><br><br>
+                            </ol>
+
+                            <div class="button">
+                                <div class="previousQuestion"> 
+                                    <button type="button" onclick="showPreviousQuestion()" class="arrow-button">&#8592;</button>
+                                </div>
+                                <div class="nextQuestion"> 
+                                    <button type="button" onclick="showNextQuestion()" class="arrow-button">&#8594;</button>   
+                                </div>
+                            </div>                    
+                        </div>
+
+                    <!-- Final Submit -->
+                    <div class="question">
+                        <div class="finalButton">
+                            <button type="submit" id="submit" onclick="showThankYouMessage()">Submit</button> 
+                            <button type="reset" id="reset" onclick="clearForm()">Clear</button>
+                        </div>
+                        
+                        <div class="button">
+                            <div class="previousQuestion"> 
+                                <button type="button" id="arrow-button" onclick="showPreviousQuestion()" class="arrow-button">&#8592;</button>
+                            </div>
+                        
+                    </div>
+                    
+                    <div id="thank-you" class="thank-you-message">
+                        <h2>Thank You!</h2>
+                        <p>Your responses have been submitted successfully.</p>
+                    </div>
+
+                    <div id="reset-form" class="reset-form">
+                        <h2>Form has been cleared.</h2>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>  
+
     </div>
-</div>
+</body>
 
+    <!-- Footer -->
+<footer> 
+        <div class="footer">
+            <div class="footerNav">
+                <div class="contact">
+                    <ul>Get in touch</ul> 
+                    <p>camvan.le@torontomu.ca</p>
+                    <p>(+1) 604 803 3899</p>
+                    <p>Toronto, ON</p>
+            </div>
+        
+            <div class="homepage">
+                <ul>Explore</ul>
+                <a href="#introduction-container" class="social_link" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"><p>Home</p>
+                </a>
+                <a href="#intro_section" class="social_link" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"><p>About me</p></a>
+                <a href="#project-section" class="social_link" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"><p>Project</p>
+                </a>  
+                <a href="CamVanLe_Resume.pdf" download><p>Download My Resume</p></a>
+            </div>
+            
+                <div class="icons">
+                    <a href="https://github.com/camvan-le/camvan-le.github.io" target="_blank">
+                        <i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/cam-van-le-1b3a36288/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/lcvannn/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:camvan.le@torontomu.ca" target="_blank">
+                        <i class="fas fa-envelope"></i></a>  
+                </div>
+        </div>
+        </div>
+            
+        <div class="footerBottom">
+            <p>Copyright &copy;2024 Cam Van. All rights reserved.</p>
+        </div>
+</footer>
+</html>
 
-<button type="button" onclick="showPreviousQuestion()" class="arrow-button">&#8592;</button> 
-<button type="button" onclick="showNextQuestion()" class="arrow-button">&#8594;</button>
-
-
-
-function clearForm() {
-    document.getElementById("questions").reset();
-
-    // Remove data from local storage
-    localStorage.removeItem("contactFormData");
-
-    alert("Form has been cleared.");
-}
