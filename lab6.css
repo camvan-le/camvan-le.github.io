@@ -193,6 +193,10 @@
     padding: 5%;
 }
 
+.label {
+    color: #f9eded
+}
+
 /* close button */
 .close-button {
     float: right;
