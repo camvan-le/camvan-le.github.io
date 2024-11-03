@@ -190,6 +190,7 @@
 .question.active {
     display: block;
     background-color: #f9eded;
+    position: fixed;
 }
 
 .label {
