@@ -29,17 +29,19 @@ body {
 h1 { 
     font-size: 35pt;
     color: #0a2131;
+    text-align: center;
 } 
 
 h3 {
     font-size: 15pt;
-    color: #25292c;
+    color: #a0abb8;
     margin-top: 30px;
 }
 
 h4{
     font-size: 15pt;
     color: #1f334d;
+    
 }
 
 ul {
@@ -117,15 +119,128 @@ a:active {
     padding: 20px;
     border: 0;
 }
-    
-.education {
-    padding: 6px;
-    font-size: 30pt;
-    margin-bottom: 10px;
+
+/* education section */
+* {
+  box-sizing: border-box;
 }
 
+.uni_link {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  color: #a3b6c1;
+}
+
+.program_link {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 10pt;
+  color: #a3b6c1;
+}
+
+.timeline p, 
+.timeline-content-left p {
+  margin: 0;
+  padding-top: 15px;
+}
+
+.container {
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.timeline {
+  width: 120%;
+  height: auto;
+  max-width: 90%;
+  position: relative;
+}
+
+.timeline-content-left {
+  max-width: 900px; 
+  text-align: right; 
+}
+
+.timeline ul {
+  list-style: none;
+  margin-top: 0;
+}
+
+.timeline-content .date,
+.timeline-content-left .date {
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.timeline-content-left h3.date,
+.timeline-content h3.date {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+  }
+  
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+  }
+  
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+}
+
+/* program */
 .program {
-    padding: 6px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.program h1 {
+  padding-bottom: 30px;
 }
 
 .award {
@@ -226,5 +341,6 @@ h4 {
 .dropdown:hover .dropdown-content {
     display:grid;
 }
+
 
 
