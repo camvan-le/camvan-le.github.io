@@ -8,8 +8,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: rgb(127,105,115);
-    background: radial-gradient(circle, rgba(127,105,115,1) 0%, rgba(10,33,49,1) 100%);
+    background: rgb(120,103,111);
+    background: radial-gradient(circle, rgba(120,103,111,1) 0%, rgba(19,36,48,1) 100%);
     color: #3e4c59;
 }
 
