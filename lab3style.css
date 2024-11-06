@@ -84,11 +84,11 @@ a:active {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 30px;
 }
 
 .social_link {
-    margin: 20px;
+    margin: 15px;
 }
 
 .intro_section {
@@ -245,7 +245,7 @@ h1.education{
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    margin:0;
+    margin: 30px;
 }
 
 .program h1 {
@@ -257,39 +257,164 @@ h1.education{
   margin-top: 10px;
 }
 
-.award {
-    padding: 6px;
-}
-
-.activity {
-    padding: 6px;
-}
-
 .coursework {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .courses_description {
-  text-align: center;
-  display: flex;
-  flex-direction: row; /* Stacks the content vertically */
-  margin-left: 30px;
+text-align: center;
+display: flex;
+flex-direction: row; 
+margin-left: 30px;
 }
 
 .program h4 {
-  margin: 20px;
+margin: 20px;
 }
 
 .courses {
-  display: flex;
-  flex-direction: row; 
-  align-items: center; 
-  justify-content: center;
+display: flex;
+flex-direction: row; 
+align-items: center; 
+justify-content: center;
+text-align: center;
+}
+
+/* awards & activities*/
+
+/* Award Section */
+.award, .activity {
+  padding: 20px;
+}
+
+.bold-heading {
+  color:#a0abb8;
+  font-size: 15pt;
+}
+
+.award p, 
+.activity p,
+.activity a {
+  font-size: 16px;
+  color: #9da6a9;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  padding-left: 25px;
+}
+
+.activity a:hover {
+  color: #2d3658;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .combined_section {
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  .bold-heading {
+      font-size: 18px;
+  }
+}
+
+/* project */
+.project_section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin: 0;
+  }
+  
+.projects {
+  padding: 50px 20px;
+  background-color: #f5f7fa;
   text-align: center;
 }
+
+.section-title {
+  margin-bottom: 40px;
+}
+
+.project-title {
+  font-size: 24px;
+  color: #063969;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-box {
+  background-color: #a0abb8;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 350px;                
+  height: 350px;    
+}
+
+.project-box:hover {
+  transform: translateY(-10px);  
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);  
+}
+
+.project-description {
+  color: #7f8c8d;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr;  /* 2 columns on mobile */
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .project-title {
+    font-size: 20px;
+  }
+
+  .project-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    grid-template-columns: 1fr;  /* 1 column on very small screens */
+  }
+
+  .view-details-btn {
+    padding: 8px 15px;
+  }
+}
+
+
+
 
 /* user input section  */
 .introduction-container {
