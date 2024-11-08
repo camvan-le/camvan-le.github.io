@@ -8,9 +8,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: rgb(120,103,111);
-    background: radial-gradient(circle, rgba(120,103,111,1) 0%, rgba(19,36,48,1) 100%);
     color: #3e4c59;
+    background: rgb(16,16,114);
+    background: linear-gradient(90deg, rgba(16,16,114,1) 0%, rgba(5,9,23,1) 0%, rgba(96,102,108,1) 100%);
 }
 
 .body {
@@ -40,8 +40,7 @@ h3 {
 
 h4{
     font-size: 15pt;
-    color: #1f334d;
-    
+    color: #9097a0;
 }
 
 ul {
@@ -379,7 +378,6 @@ text-align: center;
   margin-bottom: 20px;
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .projects-container {
@@ -488,6 +486,4 @@ text-align: center;
 .dropdown:hover .dropdown-content {
     display:grid;
 }
-
-
 

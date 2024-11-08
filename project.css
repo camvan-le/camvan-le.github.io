@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Arial";
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #3e4c59;
+    background: rgb(16,16,114);
+    background: linear-gradient(90deg, rgba(16,16,114,1) 0%, rgba(5,9,23,1) 0%, rgba(96,102,108,1) 100%);
+}
+
+.container {
+    margin: 0 20%;
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+.project-title {
+    font-size: 2.5em;
+    color: #131d27;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-heading {
+    font-size: 1.8em;
+    color: #122d47;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #232625;
+    padding-bottom: 5px;
+}
+
+.project-content {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-overview, 
+.project-methodology, 
+.project-technologies, 
+.project-link {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #a0abb8;
+    border-radius: 10px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}

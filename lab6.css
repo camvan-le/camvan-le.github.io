@@ -173,12 +173,14 @@
 }
 
 .modal-content {
-    background-color: #f9eded;
+    background-color: #a0abb8;
     padding: 30px;
     padding-bottom: 5px;
     width: 100%;
     max-width: 800px;
     border-radius: 5px;
+    width: 700px;                
+    height: 500px;  
 }
 
 /* question */
@@ -189,7 +191,7 @@
 
 .question.active {
     display: block;
-    background-color: #f9eded;
+    background-color: #a0abb8;
 }
 
 .label {
