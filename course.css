@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Arial";
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #3e4c59;
+    background: rgb(16,16,114);
+    background: linear-gradient(90deg, rgba(16,16,114,1) 0%, rgba(5,9,23,1) 0%, rgba(96,102,108,1) 100%);
+}
+
+.body {
+    margin: 0 10%;
+}
+
+/* program */
+.program {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.courseworks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.program h4 {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.courses {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+
+h1 { 
+    font-size: 40pt;
+    color: #4c6f8a;
+    text-align: center;
+} 
+
+h3 {
+    font-size: 20pt;
+    color: #a0abb8;
+    margin-top: 30px;
+}
+
+h4{
+    font-size: 15pt;
+    color: #9097a0;
+}
+
+ul {
+    color: #cac3c3;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font-size: 15px;
+    color: #c6d2dd;
+    margin: 10px;
+} 
+
+.itm-780, 
+.itm-500, 
+.itm-305 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+
+

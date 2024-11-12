@@ -47,7 +47,8 @@
     margin-right: 20px; 
     text-align: right;
     display: flex;
-    justify-self: center;
+    justify-self: center; 
+    transition: color 0.1s ease, transform 0.1s ease;
 }
 
 .footer .icons a i {
@@ -59,6 +60,15 @@
     margin-top: 50pt;
 }
 
+.homepage a:hover {
+    color: #e4c5c2;
+}
+
+/* Hover effect for icons */
+.icons a:hover {
+    transform: scale(1.1); 
+}
+
 /* footerBottom */
 .footerBottom {
     display: flex;         
@@ -66,6 +76,10 @@
     justify-content: center; 
     background: #07111a;
     margin: 0;
+}
+
+.footerBottom p {
+    color: #555;
 }
 
 /* questions */
@@ -87,6 +101,11 @@
     display: flex;
     justify-content: center;
     align-items: left;
+}
+
+.question.active {
+    display: flex;
+    flex-direction: row;
 }
 
 /* form button */
@@ -142,7 +161,11 @@
 .button {
     display: flex;                    
     justify-content: space-between;   
-    align-items: center;             
+    align-items: center;     
+}
+
+.first-button {
+    float: right;   
 }
 
 .arrow-button {
@@ -158,7 +181,12 @@
 .arrow-button:hover {
     color: #555;     
 }
-  
+
+.button.arrow-button {
+    display: block;
+    position: fixed;
+}
+
 /* modal */
 .modal {
     display: none; 
@@ -179,8 +207,8 @@
     width: 100%;
     max-width: 800px;
     border-radius: 5px;
-    width: 700px;                
-    height: 500px;  
+    width: 600px;                
+    height: 450px;  
 }
 
 /* question */
@@ -207,18 +235,26 @@
 }
 
 /* message */
-.thank-you-message, .reset-form {
+.thank-you, .reset-form {
     display: none; 
     text-align: center;
 }
 
-.thank-you-message p{
+.thank-you p{
     color: rgb(33, 55, 77);
     font-size: 15pt;
 }
 
+.thank-you h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #thank-you, #reset-form {
-    display: none; 
+    display: flex; 
+    margin-top: 100px;
 }
 
 #arrow-button {
@@ -252,3 +288,26 @@
     margin: 0 10px;                     
     transition: background-color 0.3s;  
 }
+
+/* audio */
+#audio-section h2 {
+    text-align: center;
+    color: #a0abb8;
+    font-size: 1.5rem; /* Responsive font size */
+    margin-bottom: 20px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    audio {
+        width: 100%;
+    }
+    #audio-section h2 {
+        font-size: 1.2rem;
+    }
+}
+

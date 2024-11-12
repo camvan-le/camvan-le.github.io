@@ -91,21 +91,28 @@ function showPreviousQuestion() {
 
 // thank you message // 
 function showThankYouMessage() {
-    document.getElementById('thank-you').style.display = 'block';
-    document.getElementById('reset-form').style.display = 'none';
-    document.getElementById('submit').style.display = 'none';
-    document.getElementById('reset').style.display = 'none';
-    document.getElementById('arrow-button').style.display = 'none';
+    const questionDivs = document.querySelectorAll('.question');
+    questionDivs.forEach(function (question) {
+        question.style.display = 'none'; 
+    });
+    const thankYouMessage = document.getElementById('thank-you');
+    thankYouMessage.style.display = 'block';
+    
+    const submitButton = document.getElementById('submit');
+    submitButton.disabled = true; 
 }
 
-// reset message // 
+// reset form message // 
 function clearForm() {
-    document.getElementById('reset-form').style.display = 'block'; 
-    document.getElementById('thank-you').style.display = 'none';
-    document.getElementById('arrow-button').style.display = 'none'; 
-    document.getElementById('submit').style.display = 'none'; 
-    document.getElementById('reset').style.display = 'none'; 
-    document.getElementById('questions').reset(); 
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(question => {
+        question.style.display = 'none';
+    });
+
+    const resetMessage = document.getElementById('reset-form');
+    resetMessage.style.display = 'block';
+
+    document.getElementById('questions').reset();
 }
 
 // store the form data in local storage //
