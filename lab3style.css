@@ -319,7 +319,7 @@ ul a:hover {
 .first-activity-img {
   display: flex;  /* Align the images horizontally */
   justify-content: center;  /* Center the images horizontally within the container */
-  gap: 10px;  /* Add space between the images */
+  gap: 30px;  /* Add space between the images */
   margin: 20px 0;  /* Add margin above and below the image container */
 }
 

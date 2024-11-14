@@ -296,11 +296,9 @@
 }
 
 /* audio */
-#audio-section h2 {
-    text-align: center;
-    color: #a0abb8;
-    font-size: 1.5rem; /* Responsive font size */
-    margin-bottom: 20px;
+.audio-section h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 figcaption {

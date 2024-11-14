@@ -174,41 +174,9 @@ function changeBackgroundColor() {
 
 // alt text for img //
 function displayAltText() {
-    const image = document.getElementById('img');  
-    const altText = image.alt;  
-    const altTextDisplay = document.getElementById('altTextDisplay');
-    const button = document.querySelector('.intro_button'); 
-
-    if (altTextDisplay.textContent !== '') {
-        altTextDisplay.textContent = '';  
-        button.textContent = 'Show Alt Text';  
-    } else {
-        altTextDisplay.textContent = altText;  
-        button.textContent = 'Hide Alt Text';  
-    }
-}
-
-
-
-function displayAltText() {
-    const image = document.getElementById('intro_img');  
-    const altText = image.alt;  // Get the alt text of the image
-    const altTextDisplay = document.getElementById('altTextDisplay');
-    const button = document.querySelector('altTextDisplay'); 
-    
-    // Toggle the alt text and button text
-    if (altTextDisplay.textContent !== '') {
-        altTextDisplay.textContent = '';  
-        button.textContent = 'Show Alt Text';  
-
-        altTextDisplay.textContent = altText;  
-        button.textContent = 'Hide Alt Text';  
-    }
-}
-
-function displayAltText() {
     const img1 = document.getElementById('activity1_img');  
-    const img2 = document.getElementById('activity11_img'); 
+    const img2 = document.getElementById('activity2_img'); 
+    const img3 = document.getElementById('activity3_img'); 
     const altText2 = img2.alt;  
     
     const altTextDisplay = document.getElementById('alt-text');
@@ -219,7 +187,9 @@ function displayAltText() {
         button.textContent = 'Show Alt Text'; 
     
     } else {
-        altTextDisplay.innerHTML = `An assortment of fresh flowers on display in a flower shop, each variety labeled with Vietnamese names and prices`;  
+        altTextDisplay.innerHTML = `An assortment of fresh flowers on display in a flower shop, 
+        each variety labeled with Vietnamese names and prices. Later on, at a heartfelt charity event, we were filled with 
+        gratitude as we donated all the money we raised for the orphanage, knowing it would make a difference in the lives of those children.`;  
         button.textContent = 'Hide Alt Text'; 
     }
 }
