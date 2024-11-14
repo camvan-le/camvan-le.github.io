@@ -142,7 +142,7 @@ document.getElementById('questions').addEventListener('submit', function(e) {
     const option5 = document.getElementById('option5').value;
     const option6 = document.getElementById('option6').value;
 
-    // Store the data in local storage
+    // Store the data in local storage // 
     localStorage.setItem('contactFormData', JSON.stringify({
         name, gender, email, number, yes, no, service, method, 
         value_1, value_2, value_3, value_4, value_5, value_6, 
@@ -151,3 +151,75 @@ document.getElementById('questions').addEventListener('submit', function(e) {
 });
 
 
+// enlarge button 
+function enlargeText() {
+    const mainContentElements = document.querySelectorAll('.main-content *');
+
+    mainContentElements.forEach(element => {
+        const currentSize = parseFloat(window.getComputedStyle(element).fontSize);
+        element.style.fontSize = (currentSize * 1.02) + "px"; 
+    });
+}
+
+// change background color // 
+function changeBackgroundColor() {
+    const color = '#fafcff';  
+    document.body.style.background = color;  
+
+    const navLinks = document.querySelectorAll('.social_link');
+    navLinks.forEach(link => {
+        link.style.color = '#6d7780';  
+    });
+}
+
+// alt text for img //
+function displayAltText() {
+    const image = document.getElementById('img');  
+    const altText = image.alt;  
+    const altTextDisplay = document.getElementById('altTextDisplay');
+    const button = document.querySelector('.intro_button'); 
+
+    if (altTextDisplay.textContent !== '') {
+        altTextDisplay.textContent = '';  
+        button.textContent = 'Show Alt Text';  
+    } else {
+        altTextDisplay.textContent = altText;  
+        button.textContent = 'Hide Alt Text';  
+    }
+}
+
+
+
+function displayAltText() {
+    const image = document.getElementById('intro_img');  
+    const altText = image.alt;  // Get the alt text of the image
+    const altTextDisplay = document.getElementById('altTextDisplay');
+    const button = document.querySelector('altTextDisplay'); 
+    
+    // Toggle the alt text and button text
+    if (altTextDisplay.textContent !== '') {
+        altTextDisplay.textContent = '';  
+        button.textContent = 'Show Alt Text';  
+
+        altTextDisplay.textContent = altText;  
+        button.textContent = 'Hide Alt Text';  
+    }
+}
+
+function displayAltText() {
+    const img1 = document.getElementById('activity1_img');  
+    const img2 = document.getElementById('activity11_img'); 
+    const altText2 = img2.alt;  
+    
+    const altTextDisplay = document.getElementById('alt-text');
+    const button = document.querySelector('activity_button');
+    
+    if (altTextDisplay.textContent !== '') {
+        altTextDisplay.textContent = '';  
+        button.textContent = 'Show Alt Text'; 
+    
+    } else {
+        altTextDisplay.innerHTML = `An assortment of fresh flowers on display in a flower shop, each variety labeled with Vietnamese names and prices`;  
+        button.textContent = 'Hide Alt Text'; 
+    }
+}

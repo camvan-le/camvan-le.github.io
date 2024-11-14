@@ -109,6 +109,12 @@
 }
 
 /* form button */
+.formContainer h1{
+    font-size: 35pt;
+    color: #4c6f8a;
+    text-align: center;
+}
+
 .buttonContainer {
     display: flex;
     justify-content: center;
@@ -311,3 +317,12 @@ figcaption {
     }
 }
 
+
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+nav a.dark-mode {
+    color: white;
+}
